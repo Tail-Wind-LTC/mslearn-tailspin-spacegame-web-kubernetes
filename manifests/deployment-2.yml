@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "tailspinspacegame13237-0496"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "tailspinspacegame13237-0496"
+  template:
+    metadata:
+      labels:
+        app: "tailspinspacegame13237-0496"
+    spec:
+      containers:
+        - name: "tailspinspacegame13237-0496"
+          image: "tailspinspacegame13237.azurecr.io/tailspinspacegame13237"
+          ports:
+          - containerPort: 80
